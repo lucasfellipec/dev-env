@@ -6,7 +6,7 @@
 #
 # could be cool!
 # this means i could create a neovim plugin to shoot commands out to "scratch"
-if test (pwd) = "$HOME/www/personal"
+if test (pwd) = "$HOME/personal"
     clear
     return
 end
