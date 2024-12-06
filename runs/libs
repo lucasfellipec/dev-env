@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if [ "$(uname)" != "Linux" ]; then
+    echo "you need to be on a linux"
+    exit 1
+fi
+
+sudo apt -y update
+sudo apt -y install git ripgrep pavucontrol xclip jq tldr shutter python3-pip
+
+git clone git@github.com:junegunn/fzf.git $HOME/personal/fzf
+$HOME/personal/fzf/install
