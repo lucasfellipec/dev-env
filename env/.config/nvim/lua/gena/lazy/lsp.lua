@@ -28,7 +28,6 @@ return {
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
-                "helm_ls",
                 "lua_ls",
             },
             handlers = {
