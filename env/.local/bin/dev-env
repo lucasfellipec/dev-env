@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 (
-cd $HOME/www/personal/dev-env
+cd $HOME/personal/dev-env
 ./dev-env
 hash -r
 )
