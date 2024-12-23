@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$(uname)" == "Linux" ]; then
+    echo "you need to be on a mac"
+    exit 1
+fi
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 packages=(
