@@ -13,7 +13,7 @@ alt - 9 : yabai -m space --focus 9
 alt - 0 : yabai -m space --focus 0
 
 alt - f : yabai -m window --focus "$(yabai -m query --windows | jq 'map(select(.["is-visible"] == true)) | sort_by(.frame.y, .frame.x) | .[0].id')"
-alt - g : open -a /Applications/WezTerm.app/
+alt - g : open -a /Applications/Ghostty.app/
 
 shift + alt - 1 : yabai -m window --space 1
 shift + alt - 2 : yabai -m window --space 2

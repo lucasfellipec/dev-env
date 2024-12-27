@@ -1,0 +1,23 @@
+theme = rose-pine
+background = 000000
+
+shell-integration-features = no-cursor,no-sudo,title
+shell-integration = fish
+
+font-family = JetBrains Mono
+font-size = 14
+
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+
+cursor-style-blink = false
+
+confirm-close-surface = false
+
+macos-titlebar-proxy-icon = hidden
+macos-option-as-alt = true
+
+macos-non-native-fullscreen = true
+
+window-padding-x = 4
