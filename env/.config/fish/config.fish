@@ -21,4 +21,4 @@ end
 
 export PATH="$PATH:$HOME/.local/bin"
 export XDG_CONFIG_HOME="$HOME/.config"
-export DEV_ENV_HOME="$HOME/www/personal/dev-env"
+export DEV_ENV_HOME="$HOME/personal/dev-env"
