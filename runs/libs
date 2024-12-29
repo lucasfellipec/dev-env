@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ "$(uname)" != "Linux" ]; then
-    echo "you need to be on a linux"
+    echo "you need to be on a Linux"
     exit 1
 fi
 
