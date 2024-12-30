@@ -22,3 +22,5 @@ end
 export PATH="$PATH:$HOME/.local/bin"
 export XDG_CONFIG_HOME="$HOME/.config"
 export DEV_ENV_HOME="$HOME/personal/dev-env"
+
+set fish_greeting

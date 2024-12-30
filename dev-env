@@ -64,7 +64,7 @@ copy() {
     fi
 }
 
-set_tsoding_theme() {
+set_theme() {
     local fish_prompt_path="$DEV_ENV_HOME/env/.config/fish/functions/fish_prompt.fish"
     local tsoding_template_path="$DEV_ENV_HOME/templates/tsoding/fish/fish_prompt.fish"
     local default_template_path="$DEV_ENV_HOME/templates/default/fish/fish_prompt.fish"
@@ -86,7 +86,7 @@ set_ghostty_config() {
     fi
 }
 
-set_tsoding_theme
+set_theme
 set_ghostty_config
 
 update_files $DEV_ENV_HOME/env/.config $XDG_CONFIG_HOME
