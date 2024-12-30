@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 dry_run="0"
-tsoding="0"
 
 if [ -z "$DEV_ENV_HOME" ]; then
     echo "env var $DEV_ENV_HOME needs to be present"
@@ -10,8 +9,6 @@ fi
 
 if [[ $1 == "--dry" ]]; then
     dry_run="1"
-elif [[ $1 == "--tsoding" ]]; then
-    tsoding="1"
 fi
 
 log() {
@@ -63,31 +60,6 @@ copy() {
         cp $1 $2
     fi
 }
-
-set_theme() {
-    local fish_prompt_path="$DEV_ENV_HOME/env/.config/fish/functions/fish_prompt.fish"
-    local tsoding_template_path="$DEV_ENV_HOME/templates/tsoding/fish/fish_prompt.fish"
-    local default_template_path="$DEV_ENV_HOME/templates/default/fish/fish_prompt.fish"
-    if [[ $tsoding == "1" ]]; then
-        cp "$tsoding_template_path" "$fish_prompt_path"
-    else
-        cp "$default_template_path" "$fish_prompt_path"
-    fi
-}
-
-set_ghostty_config() {
-    local ghostty_config_path="$DEV_ENV_HOME/env/.config/ghostty/config"
-    local tsoding_ghostty_config_path="$DEV_ENV_HOME/templates/tsoding/ghostty/config"
-    local default_ghostty_config_path="$DEV_ENV_HOME/templates/default/ghostty/config"
-    if [[ $tsoding == "1" ]]; then
-        cp "$tsoding_ghostty_config_path" "$ghostty_config_path"
-    else
-        cp "$default_ghostty_config_path" "$ghostty_config_path"
-    fi
-}
-
-set_theme
-set_ghostty_config
 
 update_files $DEV_ENV_HOME/env/.config $XDG_CONFIG_HOME
 update_files $DEV_ENV_HOME/env/.local $HOME/.local
