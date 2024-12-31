@@ -12,6 +12,7 @@ font-feature = -liga
 font-feature = -dlig
 
 cursor-style-blink = false
+cursor-color = e2e1f1
 
 confirm-close-surface = false
 
