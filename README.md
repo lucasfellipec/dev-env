@@ -6,7 +6,6 @@ A collection of scripts and configurations for setting up a consistent developme
 
 - Fish shell configuration with custom themes
 - Automated environment setup script
-- Support for both standard and tsoding-style prompts
 - Dry run capability for testing configurations
 
 ## Installation
@@ -29,10 +28,4 @@ export DEV_ENV_HOME="/path/to/dev-env"
 
 # Dry run to preview changes
 ./dev-env --dry
-
-# Install with tsoding theme
-./dev-env --tsoding
 ```
-
-## License
-MIT
