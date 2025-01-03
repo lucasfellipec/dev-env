@@ -24,3 +24,4 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export DEV_ENV_HOME="$HOME/personal/dev-env"
 
 set fish_greeting
+set -g fish_autosuggestion_enabled 0

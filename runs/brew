@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ "$(uname)" == "Linux" ]; then
-    echo "you need to be on a MacOS"
+if [[ "$(uname)" == "Linux" ]]; then
+    echo "you're on an OS that does not support the script"
     exit 1
 fi
 

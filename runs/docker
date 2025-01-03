@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ "$(uname)" != "Linux" ]; then
-    echo "you need to be on a Linux"
+    echo "you're on an OS that does not support the script"
     exit 1
 fi
 
